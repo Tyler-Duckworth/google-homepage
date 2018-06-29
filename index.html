@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>the odin project - Google Search</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="img/googleg_lodp.ico">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script type="text/javascript">
+            var query = '';
+            document.getElementById('input').addEventListener('change', updateName());
+            function updateName() {
+                var out = document.getElementById('input').value;
+                query = out.replace(' ', '+');
+            }
+        </script>
+    </head>
+    <body>
+        <header class="container-fluid">
+            <form class="upper-nav row">
+                <div class="col-1">
+                    <img src="img/googlelogo_color_120x44dp.png" class="logo-nav responsive" width="120" height="44">
+                </div>
+                <div class="col-6">
+                        <div class="searchbar">
+                            <input class="input" type="text" value="the odin project" id="input">
+                            <a href="javascript:void(0)">
+                                <i id="mic" class="material-icons">keyboard_voice</i>
+                            </a>
+                            <a href="https://www.google.com/search?q={{query}}">
+                                <span class="glass">
+                                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                </div>
+                <div class="col-3">&nbsp;</div>
+                <div class="col-2">
+                        <img class="menu" src="img/menu.png">
+                        <img class="bell" src="img/bell.png">
+                        <img class="account" src="img/photo.jpg">
+                    </div>
+                
+            </form>
+            <div class="lower-nav row">
+                <div class="row" id="left">
+                    <div class="lower act">All</div>
+                    <div class="lower">News</div>
+                    <div class="lower">Videos</div>
+                    <div class="lower">Images</div>
+                    <div class="lower">Shopping</div>
+                    <div class="lower">More</div>
+
+                    <div class="big-lower">&nbsp;</div>
+
+                    <div class="lower">Setting</div>
+                    <div class="lower">Tools</div>
+
+                    <div class="lower ss">SafeSearch on</div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div id="results">About 12,900,000 results (0.42 seconds)</div>
+            <div class="odin container-fluid">
+                <h3><a href="https://www.theodinproject.com">The Odin Project: Your Career in Web Development Starts Here</a></h3>
+                <span class="green">https://www.theodinproject.com/ <strong style="font-size: 1em;">&#9662;</strong></span>
+                <br/>
+                <span class="s"><b>The Odin Project</b> empowers aspiring web developers to learn together.</span>
+                <div class="row">
+                        <div class="col-3">
+                            <h3><a href="https://www.theodinproject.com">Curriculum</a></h3>
+                            <span id="results">This is where it all begins! A hands-on introduction to all of the ..</span>
+                        </div>
+                        <div class="col-3">
+                            <h3><a href="https://www.theodinproject.com">About</a></h3>
+                            <span id="results">The Odin Project is one of those "What I wish I had when I was ...</span>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-3">
+                            <h3><a href="https://www.theodinproject.com">Web Development 101</a></h3>
+                            <span id="results">Overview. This is where it all begins! A hands-on introduction ...</span>
+                        </div>
+                        <div class="col-3">
+                            <h3><a href="https://www.theodinproject.com">Ruby Programming Course</a></h3>
+                            <span id="results">Ruby Building Blocks - Ruby Final Project - Building Blocks - OOP</span>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-3">
+                            <h3><a href="https://www.theodinproject.com">Log In</a></h3>
+                            <span id="results">The Odin Project empowers aspiring web developers to ...</span>
+                        </div>
+                        <div class="col-3">
+                            <h3><a href="https://www.theodinproject.com">FAQ</a></h3>
+                            <span id="results">The Odin Project empowers aspiring web developers to ...</span>
+                        </div>
+                        <div class="w-100"></div>
+                        <a class="small" href="#">More results from theodinproject.com »</a>
+                    </div>
+            </div>
+            <div class="odin container-fluid">
+                    <h3><a href="https://medium.com/the-odin-project/my-path-to-web-development-part1-415e420364e8">My path to web development - The Odin Project - Medium</a></h3>
+                    <span class="green">https://medium.com/the-odin-project/my-path-to-web-development-part1-415e42036... <strong style="font-size: 1em;">&#9662;</strong></span>
+                    <br/>
+                    <span class="s"><span class="s-lite">May 26, 2017 - </span>I clicked on it and discovered <b>The Odin Project</b>. Yes, another website where you can learn <br>to code for free. I went and checked it out and was ...</span>
+            </div>
+            <div class="odin container-fluid">
+                    <h3><a href="https://www.facebook.com/theodinproject/">The Odin Project - Home | Facebook</a></h3>
+                    <span class="green">https://www.facebook.com/theodinproject/ <strong style="font-size: 1em;">&#9662;</strong></span>
+                    <br/>
+                    <span class="s">At <b>the Odin Project</b>, after releasing our freshly redesigned website (https://www.theodinproject.com/) <br> we are happy to say we are now hard at work refreshing and ...</span>
+            </div>
+            <div class="odin container-fluid">
+                    <h3><a href="https://github.com/TheOdinProject">The Odin Project · GitHub</a></h3>
+                    <span class="green">https://github.com/TheOdinProject <strong style="font-size: 1em;">&#9662;</strong></span>
+                    <br/>
+                    <span class="s">GitHub is where people build software. More than 28 million people use GitHub to discover, fork,<br>and contribute to over 85 million <b>projects</b>.</span>
+            </div>
+            <div class="odin container-fluid">
+                    <h3><a href="http://everydayutilitarian.com/essays/notes-on-the-odin-project/">A Better Way to Learn Programming? Notes on The Odin Project ...</a></h3>
+                    <span class="green">everydayutilitarian.com/essays/notes-on-the-odin-project/ <strong style="font-size: 1em;">&#9662;</strong></span>
+                    <br/>
+                    <span class="s"><span class="s-lite">Jul 9, 2014 - </span>That being said, I do have some modifications I'd like to see to <b>The Odin Project</b>. So <br>consider doing The Odin Project, except with the following ...</span>
+            </div>
+            <div class="odin container-fluid">
+                    <h3><a href="https://www.quora.com/How-does-The-Odin-Project-compare-to-programming-bootcamps-like-Hack-Reactor">How does The Odin Project compare to programming bootcamps like ...</a></h3>
+                    <span class="green">https://www.quora.com/How-does-The-Odin-Project-compare-to-programming-bootc... <strong style="font-size: 1em;">&#9662;</strong></span>
+                    <br/>
+                    <span class="s">However, I did not dedicate myself to learn via <b>The Odin Project</b>. I went through its intro curriculum that<br>covered basic HTML, CSS, and jQuery. I contributed to ...</span>
+            </div>
+            <div class="odin container-fluid">
+                    <h3><a href="https://www.youtube.com/channel/UCk0b0VTnJxXbxupXJ4D2yjQ">The Odin Project - YouTube</a></h3>
+                    <span class="green">https://www.youtube.com/channel/UCk0b0VTnJxXbxupXJ4D2yjQ <strong style="font-size: 1em;">&#9662;</strong></span>
+                    <br/>
+                    <span class="s"><b>The Odin Project</b> added 1 video to Favorites 4 years ago ... for <b>the Odin Project</b>, a free online curriculum <br> for learning web development (http://theodinproject.com) ...</span>
+            </div>
+            <h3 class="related">Searches related to the odin project</h3>
+            <div class="relate row">
+                <ul class="col-4">
+                    <li><a href="#">the odin project <b>review</b></a></li>
+                    <li><a href="#">the odin project <b>reddit</b></a></li>
+                    <li><a href="#"><b>is</b> the odin project <b>free</b></a></li>
+                    <li><a href="#">the odin project <b>success stories</b></a></li>
+                </ul>
+                <ul class="col-4">
+                    <li><a href="#"><b>how long does</b> the odin project <b>take</b></a></li>
+                    <li><a href="#">the odin project <b>login</b></a></li>
+                    <li><a href="#">the odin project<b> vs free code camp</b></a></li>
+                    <li><a href="#">the odin project <b>review 2017</b></a></li>
+                </ul>
+            </div>
+            <table>
+                <tbody>
+                        <td>
+                            <img src="img/g.png">
+                        </td>
+                        <td>
+                            <a class="o" href="#">
+                                <img src="img/o.png">
+                                1
+                            </a>
+                        </td>
+                        <td>
+                            <a class="o" href="#">
+                                <img src="img/oy.png">
+                                2
+                            </a>                   
+                        </td>
+                        <td>
+                            <a class="o" href="#">
+                                <img src="img/oy.png">
+                                3
+                            </a>                         
+                        </td>
+                        <td>    
+                            <a class="o" href="#">
+                                <img src="img/oy.png">
+                                4
+                            </a>    
+                        </td>
+                        <td>
+                            <a class="o" href="#">
+                                <img src="img/oy.png">
+                                5
+                            </a>  
+                        </td>
+                        <td>
+                            <a class="o" href="#">
+                                <img src="img/oy.png">
+                                6
+                            </a>
+                        </td>
+                        <td>
+                            <a class="o" href="#">
+                                <img src="img/oy.png">
+                                7
+                            </a>                        
+                        </td>
+                        <td>
+                            <a class="o" href="#">
+                                <img src="img/oy.png">
+                                8
+                            </a>                        
+                        </td>
+                        <td>
+                            <a class="o" href="#">
+                                <img src="img/oy.png">
+                                9
+                            </a>                        
+                        </td>
+                        <td>
+                            <a class="o" href="#">
+                                <img src="img/oy.png">
+                                10
+                            </a>                        
+                        </td>
+                        <td>
+                            <a class="o gle" href="#">
+                                <img src="img/gle.png">
+                                Next
+                            </a>
+                        </td>
+                    </tbody>
+            </table>
+        </div>
+        <footer>
+            <div class="upper-foot">
+                <span class="loc"></span>
+                <span class="uf">416, Ontario, Canada - From your Internet address - <span id="hov">Use a precise location</span> - <span id="hov">Learn more</span></span>
+            </div>
+            <br>
+            <span class="footLink"><a id="hov" class="fl">Help</a> <a id="hov" class="fl">Send Feedback</a> <a id="hov" class="fl">Privacy</a> <a id="hov" class="fl">Terms</a></span>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
